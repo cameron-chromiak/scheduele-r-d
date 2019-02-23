@@ -1,0 +1,12 @@
+.scheduele-container{
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 30px;
+}
+.marg{
+    margin-left: -5px;
+}
+*{
+  margin: 0;
+  padding: 0
+}
