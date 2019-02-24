@@ -42,11 +42,14 @@
   let idCount = 1
 $('#addRowBtn').click(function(){
   jQuery('<div/>', {
-    id: `row-${idCount}`
+    id: `row-${idCount}`,
+    class: 'generated-row'
 }).appendTo('#scheduele-container');
   for(let i=0; i<19; i++){
     jQuery('<div/>',{
-      id: `row-${idCount}-cell${i}`
+      id: `row-${idCount}-cell${i}`,
+      class: 'd-inline border px-4 py-2 generated-div',
+      text: 'x'
     }).appendTo(`#row-${idCount}`)
   }
   $()

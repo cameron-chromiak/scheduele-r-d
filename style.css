@@ -1,10 +1,19 @@
+.generated-row{
+  /* border: 1px solid black; */
+  white-space: nowrap;
+}
+.generated-div{
+  padding-right: 100px;
+}
 .scheduele-container{
   overflow-x: scroll;
   white-space: nowrap;
   padding-bottom: 30px;
+  height: 100px;
 }
 .marg{
     margin-left: -5px;
+    margin-bottom: 100px;
 }
 *{
   margin: 0;
