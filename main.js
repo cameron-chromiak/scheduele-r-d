@@ -44,22 +44,21 @@
 $('#addRowBtn').click(generateRow)
 
 function generateRow(){
-  jQuery('<div/>', {
-    id: `row-${idCount}`,
-    class: 'generated-row'
-}).appendTo('#scheduele-container');
+//   jQuery('<div/>', {
+//     id: `row-${idCount}`,
+//     class: 'generated-row'
+// }).appendTo('#scheduele-container');
 
   for(let i=0; i<17; i++){
     jQuery('<div/>',{
       id: `row-${idCount}-cell${i}`,
       class: 'd-inline-block border px-4 py-2 generated-div',
-      // text: '0000'
-    }).appendTo(`#row-${idCount}`)
+    }).appendTo('#scheduele-container')
   }
+  jQuery('<br>').appendTo('#scheduele-container')
   idCount +=1
 }
 
 $('#scheduele-container').on("click", "div", function(){
-  console.log(this);
   $(this).toggleClass('bg-green')
 });
