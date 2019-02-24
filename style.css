@@ -1,13 +1,17 @@
+
+.bg-green{
+  background: lightgreen;
+}
 .generated-row{
   /* border: 1px solid black; */
   white-space: nowrap;
-  height: 25px;
-  margin-bottom: 15px;
+  height: 35px;
+  margin-bottom: 0;
 }
 .generated-div{
-  color: red;
+  height: 35px;
   width: 75px;
-  background: salmon;
+  /* background: lightgrey; */
   margin-right: 0
 }
 .constant-headers{
@@ -16,14 +20,14 @@
 .scheduele-container{
   overflow-x: scroll;
   white-space: nowrap;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   height: 500px;
 }
 .marg{
     margin-left: -4px;
     width: 75px;
     padding-left: 10px;
-    background: lightgreen;
+
 }
 *{
   margin: 0;
