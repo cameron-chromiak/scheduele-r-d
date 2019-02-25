@@ -11,8 +11,10 @@
 .generated-div{
   height: 35px;
   width: 75px;
+  vertical-align: bottom;
+
   /* background: lightgrey; */
-  margin-right: 0
+  margin-right: 0;
 }
 .constant-headers{
   padding-bottom: 30px;
