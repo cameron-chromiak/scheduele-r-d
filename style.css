@@ -22,7 +22,6 @@
 .scheduele-container{
   overflow-x: scroll;
   white-space: nowrap;
-  color: red;
   height: 500px;
 }
 .marg{
