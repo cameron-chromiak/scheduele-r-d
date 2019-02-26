@@ -1,3 +1,9 @@
+
+// TODO: figure line 18 out
+
+
+
+
 let rowCount = 1
 
 let addBtn = document.getElementById('add-btn')
@@ -5,7 +11,12 @@ let addBtn = document.getElementById('add-btn')
 addBtn.addEventListener('click', createNewObj)
 
 function createNewObj(){
-  console.log($('#time-end').value);
+  let startTime = document.getElementById('time-start').value
+  let endTime = document.getElementById('time-end').value
+  let name = document.getElementById('new-name').value
+  myObj.push({name: name, start: startTime, end: endTime})
+  clearBoard()
+  main()
 }
 
 myObj = [{
@@ -84,5 +95,13 @@ $('#scheduele-container').on("click", "div", function() {
 })
 
 
+// TODO: Fix
+function clearBoard(){
+  let allRows = document.querySelectorAll(`[id*=row`)
+    console.log(allRows);
+  allRows.forEach(elem => {
+    elem.remove()
+  })
+}
 
 main()
